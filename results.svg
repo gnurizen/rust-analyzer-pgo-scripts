@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="white" />
+
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Rust Analyzer Performance Comparison</text>
+
+  <!-- Y-axis -->
+  <line x1="80" y1="70" x2="80" y2="420" stroke="black" stroke-width="1" />
+  <line x1="78" y1="70" x2="80" y2="70" stroke="black" stroke-width="1" />
+  <line x1="78" y1="120" x2="80" y2="120" stroke="black" stroke-width="1" />
+  <line x1="78" y1="170" x2="80" y2="170" stroke="black" stroke-width="1" />
+  <line x1="78" y1="220" x2="80" y2="220" stroke="black" stroke-width="1" />
+  <line x1="78" y1="270" x2="80" y2="270" stroke="black" stroke-width="1" />
+  <line x1="78" y1="320" x2="80" y2="320" stroke="black" stroke-width="1" />
+  <line x1="78" y1="370" x2="80" y2="370" stroke="black" stroke-width="1" />
+  <line x1="78" y1="420" x2="80" y2="420" stroke="black" stroke-width="1" />
+
+  <!-- Y-axis labels -->
+  <text x="70" y="75" font-family="Arial" font-size="12" text-anchor="end">42</text>
+  <text x="70" y="125" font-family="Arial" font-size="12" text-anchor="end">40</text>
+  <text x="70" y="175" font-family="Arial" font-size="12" text-anchor="end">38</text>
+  <text x="70" y="225" font-family="Arial" font-size="12" text-anchor="end">36</text>
+  <text x="70" y="275" font-family="Arial" font-size="12" text-anchor="end">34</text>
+  <text x="70" y="325" font-family="Arial" font-size="12" text-anchor="end">32</text>
+  <text x="70" y="375" font-family="Arial" font-size="12" text-anchor="end">30</text>
+  <text x="70" y="425" font-family="Arial" font-size="12" text-anchor="end">0</text>
+
+  <!-- Y-axis title -->
+  <text x="25" y="250" font-family="Arial" font-size="14" text-anchor="middle" transform="rotate(-90, 25, 250)">Execution Time (s)</text>
+
+  <!-- X-axis -->
+  <line x1="80" y1="420" x2="750" y2="420" stroke="black" stroke-width="1" />
+
+  <!-- X-axis labels and bars -->
+  <!-- ipgofat - Mean: 36.058, Error: ±1.768 -->
+  <rect x="100" y="167.16" width="60" height="252.84" fill="#f1a10d" />
+  <line x1="130" y1="167.16" x2="130" y2="132.08" stroke="#333" stroke-width="2" />
+  <line x1="130" y1="132.08" x2="130" y2="202.24" stroke="#333" stroke-width="2" />
+  <line x1="120" y1="132.08" x2="140" y2="132.08" stroke="#333" stroke-width="2" />
+  <line x1="120" y1="202.24" x2="140" y2="202.24" stroke="#333" stroke-width="2" />
+  <text x="130" y="445" font-family="Arial" font-size="12" text-anchor="middle" transform="rotate(-45, 130, 445)">ipgofat</text>
+
+  <!-- ipgothin - Mean: 33.962, Error: ±0.387 -->
+  <rect x="180" y="217.62" width="60" height="202.38" fill="#2da44e" />
+  <line x1="210" y1="217.62" x2="210" y2="209.8" stroke="#333" stroke-width="2" />
+  <line x1="210" y1="209.8" x2="210" y2="225.44" stroke="#333" stroke-width="2" />
+  <line x1="200" y1="209.8" x2="220" y2="209.8" stroke="#333" stroke-width="2" />
+  <line x1="200" y1="225.44" x2="220" y2="225.44" stroke="#333" stroke-width="2" />
+  <text x="210" y="445" font-family="Arial" font-size="12" text-anchor="middle" transform="rotate(-45, 210, 445)">ipgothin</text>
+
+  <!-- lbrpgofat - Mean: 37.526, Error: ±0.880 -->
+  <rect x="260" y="134.44" width="60" height="285.56" fill="#f1a10d" />
+  <line x1="290" y1="134.44" x2="290" y2="117.2" stroke="#333" stroke-width="2" />
+  <line x1="290" y1="117.2" x2="290" y2="151.68" stroke="#333" stroke-width="2" />
+  <line x1="280" y1="117.2" x2="300" y2="117.2" stroke="#333" stroke-width="2" />
+  <line x1="280" y1="151.68" x2="300" y2="151.68" stroke="#333" stroke-width="2" />
+  <text x="290" y="445" font-family="Arial" font-size="12" text-anchor="middle" transform="rotate(-45, 290, 445)">lbrpgofat</text>
+
+  <!-- lbrpgothin - Mean: 38.546, Error: ±0.256 -->
+  <rect x="340" y="110.64" width="60" height="309.36" fill="#f1a10d" />
+  <line x1="370" y1="110.64" x2="370" y2="105.36" stroke="#333" stroke-width="2" />
+  <line x1="370" y1="105.36" x2="370" y2="115.92" stroke="#333" stroke-width="2" />
+  <line x1="360" y1="105.36" x2="380" y2="105.36" stroke="#333" stroke-width="2" />
+  <line x1="360" y1="115.92" x2="380" y2="115.92" stroke="#333" stroke-width="2" />
+  <text x="370" y="445" font-family="Arial" font-size="12" text-anchor="middle" transform="rotate(-45, 370, 445)">lbrpgothin</text>
+
+  <!-- spgofat - Mean: 37.998, Error: ±1.287 -->
+  <rect x="420" y="124.02" width="60" height="295.98" fill="#f1a10d" />
+  <line x1="450" y1="124.02" x2="450" y2="98.74" stroke="#333" stroke-width="2" />
+  <line x1="450" y1="98.74" x2="450" y2="149.3" stroke="#333" stroke-width="2" />
+  <line x1="440" y1="98.74" x2="460" y2="98.74" stroke="#333" stroke-width="2" />
+  <line x1="440" y1="149.3" x2="460" y2="149.3" stroke="#333" stroke-width="2" />
+  <text x="450" y="445" font-family="Arial" font-size="12" text-anchor="middle" transform="rotate(-45, 450, 445)">spgofat</text>
+
+  <!-- spgothin - Mean: 40.261, Error: ±1.746 -->
+  <rect x="500" y="75.22" width="60" height="344.78" fill="#cf222e" />
+  <line x1="530" y1="75.22" x2="530" y2="40.26" stroke="#333" stroke-width="2" />
+  <line x1="530" y1="40.26" x2="530" y2="110.18" stroke="#333" stroke-width="2" />
+  <line x1="520" y1="40.26" x2="540" y2="40.26" stroke="#333" stroke-width="2" />
+  <line x1="520" y1="110.18" x2="540" y2="110.18" stroke="#333" stroke-width="2" />
+  <text x="530" y="445" font-family="Arial" font-size="12" text-anchor="middle" transform="rotate(-45, 530, 445)">spgothin</text>
+
+  <!-- stockfat - Mean: 37.961, Error: ±0.332 -->
+  <rect x="580" y="124.78" width="60" height="295.22" fill="#f1a10d" />
+  <line x1="610" y1="124.78" x2="610" y2="118.1" stroke="#333" stroke-width="2" />
+  <line x1="610" y1="118.1" x2="610" y2="131.46" stroke="#333" stroke-width="2" />
+  <line x1="600" y1="118.1" x2="620" y2="118.1" stroke="#333" stroke-width="2" />
+  <line x1="600" y1="131.46" x2="620" y2="131.46" stroke="#333" stroke-width="2" />
+  <text x="610" y="445" font-family="Arial" font-size="12" text-anchor="middle" transform="rotate(-45, 610, 445)">stockfat</text>
+
+  <!-- stockthin - Mean: 39.264, Error: ±1.198 -->
+  <rect x="660" y="94.48" width="60" height="325.52" fill="#cf222e" />
+  <line x1="690" y1="94.48" x2="690" y2="70.52" stroke="#333" stroke-width="2" />
+  <line x1="690" y1="70.52" x2="690" y2="118.44" stroke="#333" stroke-width="2" />
+  <line x1="680" y1="70.52" x2="700" y2="70.52" stroke="#333" stroke-width="2" />
+  <line x1="680" y1="118.44" x2="700" y2="118.44" stroke="#333" stroke-width="2" />
+  <text x="690" y="445" font-family="Arial" font-size="12" text-anchor="middle" transform="rotate(-45, 690, 445)">stockthin</text>
+
+  <!-- Legend -->
+  <rect x="550" y="30" width="15" height="15" fill="#2da44e" />
+  <text x="570" y="42" font-family="Arial" font-size="12">Best (≤ 3% slower)</text>
+
+  <rect x="550" y="50" width="15" height="15" fill="#f1a10d" />
+  <text x="570" y="62" font-family="Arial" font-size="12">Medium (4-14% slower)</text>
+
+  <rect x="550" y="70" width="15" height="15" fill="#cf222e" />
+  <text x="570" y="82" font-family="Arial" font-size="12">Worst (≥ 15% slower)</text>
+
+  <!-- Grid lines -->
+  <line x1="80" y1="120" x2="750" y2="120" stroke="#ddd" stroke-width="1" stroke-dasharray="5,5" />
+  <line x1="80" y1="170" x2="750" y2="170" stroke="#ddd" stroke-width="1" stroke-dasharray="5,5" />
+  <line x1="80" y1="220" x2="750" y2="220" stroke="#ddd" stroke-width="1" stroke-dasharray="5,5" />
+  <line x1="80" y1="270" x2="750" y2="270" stroke="#ddd" stroke-width="1" stroke-dasharray="5,5" />
+  <line x1="80" y1="320" x2="750" y2="320" stroke="#ddd" stroke-width="1" stroke-dasharray="5,5" />
+  <line x1="80" y1="370" x2="750" y2="370" stroke="#ddd" stroke-width="1" stroke-dasharray="5,5" />
+
+  <!-- Caption at the bottom -->
+  <text x="400" y="480" font-family="Arial" font-size="12" text-anchor="middle">Mean execution times with error bars (±) for different rust-analyzer build configurations</text>
+</svg>
